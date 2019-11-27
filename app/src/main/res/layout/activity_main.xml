@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:src="@drawable/dice_1"
+       android:id="@+id/diceOne"
+       android:layout_marginTop="150dp"
+       android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:layout_toRightOf="@+id/diceOne"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/dice_2"
+        android:id="@+id/diceTwo"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diceOne"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="122dp"
+        android:background="@color/colorAccent"
+        android:text="Play Game"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
